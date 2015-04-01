@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite1">
+              <span class="suite-name border-failed">Suite1</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite1">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite1">
+                    <span class="test-stats">8 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite1">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite1">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite1">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite1">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite1">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">8 methods, 1 failed,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite1" class="hide-methods failed suite-Suite1"> (hide)</a> <!-- hide-methods failed suite-Suite1 -->
+                      <a href="#" panel-name="suite-Suite1" class="show-methods failed suite-Suite1"> (show)</a> <!-- show-methods failed suite-Suite1 -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite1">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="testing.ComparePricesWithDB" hash-for-method="comparePrices(INTEL Core i3-3250 LGA1155, INTEL Core i5-4690K LGA1150)">comparePrices(INTEL Core i3-3250 LGA1155, INTEL Core i5-4690K LGA1150)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite1 -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite1" class="hide-methods passed suite-Suite1"> (hide)</a> <!-- hide-methods passed suite-Suite1 -->
+                      <a href="#" panel-name="suite-Suite1" class="show-methods passed suite-Suite1"> (show)</a> <!-- show-methods passed suite-Suite1 -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite1">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="testing.BuyProduct" hash-for-method="BuyItemsFromWishList">BuyItemsFromWishList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="testing.Checkbox" hash-for-method="Checkbox">Checkbox</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="testing.WishListProduct" hash-for-method="addProductToWishList(INTEL Core i3-3250 LGA1155, INTEL Core i5-4690K LGA1150)">addProductToWishList(INTEL Core i3-3250 LGA1155, INTEL Core i5-4690K LGA1150)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="testing.ComparePrices2" hash-for-method="comparePrices(INTEL Core i3-3250 LGA1155, INTEL Core i5-4690K LGA1150)">comparePrices(INTEL Core i3-3250 LGA1155, INTEL Core i5-4690K LGA1150)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="testing.DeleteAll" hash-for-method="deleteAll">deleteAll</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="testing.NegativeRegistrationTest" hash-for-method="negativeRegistrationTest">negativeRegistrationTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="testing.TopMenu" hash-for-method="topMenu">topMenu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite1 -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite1" class="panel Suite1">
+          <div class="suite-Suite1-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testing.ComparePricesWithDB</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="comparePrices(INTEL Core i3-3250 LGA1155, INTEL Core i5-4690K LGA1150)">
+                  </a> <!-- comparePrices(INTEL Core i3-3250 LGA1155, INTEL Core i5-4690K LGA1150) -->
+                  <span class="method-name">comparePrices</span>
+                  <span class="parameters">(INTEL Core i3-3250 LGA1155, INTEL Core i5-4690K LGA1150)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Product Corei3 is present in DB expected [Intel Core i3-3250 LGA1155, 3.5GHz, Box (BX80637I33250SR0YX)] but found [null]
+	at testing.ComparePricesWithDB.comparePrices(ComparePricesWithDB.java:45)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-failed -->
+          <div class="suite-Suite1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testing.DeleteAll</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteAll">
+                  </a> <!-- deleteAll -->
+                  <span class="method-name">deleteAll</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-passed -->
+          <div class="suite-Suite1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testing.TopMenu</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="topMenu">
+                  </a> <!-- topMenu -->
+                  <span class="method-name">topMenu</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-passed -->
+          <div class="suite-Suite1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testing.ComparePrices2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="comparePrices(INTEL Core i3-3250 LGA1155, INTEL Core i5-4690K LGA1150)">
+                  </a> <!-- comparePrices(INTEL Core i3-3250 LGA1155, INTEL Core i5-4690K LGA1150) -->
+                  <span class="method-name">comparePrices</span>
+                  <span class="parameters">(INTEL Core i3-3250 LGA1155, INTEL Core i5-4690K LGA1150)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-passed -->
+          <div class="suite-Suite1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testing.NegativeRegistrationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="negativeRegistrationTest">
+                  </a> <!-- negativeRegistrationTest -->
+                  <span class="method-name">negativeRegistrationTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-passed -->
+          <div class="suite-Suite1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testing.Checkbox</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Checkbox">
+                  </a> <!-- Checkbox -->
+                  <span class="method-name">Checkbox</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-passed -->
+          <div class="suite-Suite1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testing.BuyProduct</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="BuyItemsFromWishList">
+                  </a> <!-- BuyItemsFromWishList -->
+                  <span class="method-name">BuyItemsFromWishList</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-passed -->
+          <div class="suite-Suite1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testing.WishListProduct</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addProductToWishList(INTEL Core i3-3250 LGA1155, INTEL Core i5-4690K LGA1150)">
+                  </a> <!-- addProductToWishList(INTEL Core i3-3250 LGA1155, INTEL Core i5-4690K LGA1150) -->
+                  <span class="method-name">addProductToWishList</span>
+                  <span class="parameters">(INTEL Core i3-3250 LGA1155, INTEL Core i5-4690K LGA1150)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-passed -->
+        </div> <!-- panel Suite1 -->
+        <div panel-name="test-xml-Suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/home/valik/qa/IdeaProjects/GodunFirstProject/src/test/resources/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;Suite1&quot;&gt;
+  &lt;test name=&quot;NegativeRegTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testing.NegativeRegistrationTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- NegativeRegTest --&gt;
+  &lt;test name=&quot;AddToWishListProduct&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testing.WishListProduct&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- AddToWishListProduct --&gt;
+  &lt;test name=&quot;AddToBuy&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testing.BuyProduct&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- AddToBuy --&gt;
+  &lt;test name=&quot;Prices1&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testing.ComparePrices2&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Prices1 --&gt;
+  &lt;test name=&quot;topMenu&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testing.TopMenu&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- topMenu --&gt;
+  &lt;test name=&quot;ComparePricesWithDB&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testing.ComparePricesWithDB&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ComparePricesWithDB --&gt;
+  &lt;test name=&quot;Checkbox&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testing.Checkbox&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Checkbox --&gt;
+  &lt;test name=&quot;ClearAll&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testing.DeleteAll&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ClearAll --&gt;
+&lt;/suite&gt; &lt;!-- Suite1 --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">NegativeRegTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">AddToWishListProduct (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">AddToBuy (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Prices1 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">topMenu (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">ComparePricesWithDB (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Checkbox (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">ClearAll (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite1');
+function tableData_Suite1() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(8);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'negativeRegistrationTest')
+data.setCell(0, 2, 'testing.NegativeRegistrationTest')
+data.setCell(0, 3, 15115);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'addProductToWishList')
+data.setCell(1, 2, 'testing.WishListProduct')
+data.setCell(1, 3, 14935);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'deleteAll')
+data.setCell(2, 2, 'testing.DeleteAll')
+data.setCell(2, 3, 9598);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'comparePrices')
+data.setCell(3, 2, 'testing.ComparePrices2')
+data.setCell(3, 3, 7556);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'topMenu')
+data.setCell(4, 2, 'testing.TopMenu')
+data.setCell(4, 3, 7534);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'comparePrices')
+data.setCell(5, 2, 'testing.ComparePricesWithDB')
+data.setCell(5, 3, 7490);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'Checkbox')
+data.setCell(6, 2, 'testing.Checkbox')
+data.setCell(6, 3, 5313);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'BuyItemsFromWishList')
+data.setCell(7, 2, 'testing.BuyProduct')
+data.setCell(7, 3, 2575);
+window.suiteTableData['Suite1']= { tableData: data, tableDiv: 'times-div-Suite1'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Suite1">
+              </div> <!-- times-div-Suite1 -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">negativeRegistrationTest</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">INFO: "Expected results of the empty field "email" - true (enter just name)"</span>
+                <span class="reporter-method-output">INFO: "Expected results of the empty field "pass" - true (enter name and email)"</span>
+                <span class="reporter-method-output">INFO: "Expected results of the empty field "second field pass" - true (enter name, email, pass)"</span>
+                <span class="reporter-method-output">INFO: "Expected results of the empty field "first field pass" - true (enter name, email, second field pass)"</span>
+                <span class="reporter-method-output">INFO: "Expected results of the empty field "name" - true (enter just email)"</span>
+                <span class="reporter-method-output">INFO: "Expected results of the empty field "name" - true (enter just pass)"</span>
+                <span class="reporter-method-output">INFO: "Expected results of the empty field "name" - true (enter email and pass)"</span>
+                <span class="reporter-method-output">INFO: "Expected results of the empty field "name" - true (enter all field, without name)"</span>
+                <span class="reporter-method-output">INFO: "Expected results of the empty field "email" - true (enter all field, without email)"</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">addProductToWishList(INTEL Core i3-3250 LGA1155, INTEL Core i5-4690K LGA1150)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">INFO: "Adding products are present in the wishlist "</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">BuyItemsFromWishList</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">INFO: "Products being compared are present at comparison page "</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">comparePrices(INTEL Core i3-3250 LGA1155, INTEL Core i5-4690K LGA1150)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">INFO: "price of the first item converges. Test completed successful - ArrayList"</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">topMenu</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">INFO: "Adding product are present in compare page"</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Checkbox</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">INFO: "checkbox №1 Is Checked"</span>
+                <span class="reporter-method-output">INFO: "checkbox №2 Is UnChecked"</span>
+                <span class="reporter-method-output">INFO: "checkbox №3 Is UnChecked"</span>
+                <span class="reporter-method-output">INFO: "checkbox №4 Is Checked"</span>
+                <span class="reporter-method-output">INFO: "checkbox №5 Is UnChecked"</span>
+                <span class="reporter-method-output">INFO: "checkbox №6 Is UnChecked"</span>
+                <span class="reporter-method-output">INFO: "checkbox №7 Is UnChecked"</span>
+                <span class="reporter-method-output">INFO: "checkbox №8 Is UnChecked"</span>
+                <span class="reporter-method-output">INFO: "checkbox №9 Is UnChecked"</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testing.DeleteAll</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">initEnv</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testing.NegativeRegistrationTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">negativeRegistrationTest</span>
+                <span class="method-start">3877 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testing.WishListProduct</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addProductToWishList(INTEL Core i3-3250 LGA1155, INTEL Core i5-4690K LGA1150)</span>
+                <span class="method-start">19010 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testing.BuyProduct</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">BuyItemsFromWishList</span>
+                <span class="method-start">33947 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testing.ComparePrices2</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">comparePrices(INTEL Core i3-3250 LGA1155, INTEL Core i5-4690K LGA1150)</span>
+                <span class="method-start">36526 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testing.TopMenu</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">topMenu</span>
+                <span class="method-start">44085 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testing.ComparePricesWithDB</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">comparePrices(INTEL Core i3-3250 LGA1155, INTEL Core i5-4690K LGA1150)</span>
+                <span class="method-start">51621 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testing.Checkbox</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Checkbox</span>
+                <span class="method-start">59119 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testing.DeleteAll</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">deleteAll</span>
+                <span class="method-start">64434 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-suite after">
+                <span class="method-name">envShut</span>
+                <span class="method-start">74034 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

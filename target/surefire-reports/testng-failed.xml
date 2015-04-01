@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Suite1]">
+  <test name="ComparePricesWithDB(failed)">
+    <classes>
+      <class name="testing.ComparePricesWithDB">
+        <methods>
+          <include name="comparePrices" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testing.ComparePricesWithDB -->
+      <class name="testing.DeleteAll">
+        <methods>
+          <include name="envShut"/>
+          <include name="initEnv"/>
+        </methods>
+      </class> <!-- testing.DeleteAll -->
+    </classes>
+  </test> <!-- ComparePricesWithDB(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

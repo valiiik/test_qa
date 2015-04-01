@@ -1,0 +1,50 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1" >
+    <test name="NegativeRegTest">
+        <classes>
+            <class name="testing.NegativeRegistrationTest"></class>
+        </classes>
+    </test>
+    <test name="AddToWishListProduct">
+        <classes>
+            <class name="testing.WishListProduct"></class>
+        </classes>
+    </test>
+    <test name="AddToBuy">
+        <classes>
+            <class name="testing.BuyProduct"></class>
+        </classes>
+    </test>
+    <test name="Prices1">
+        <classes>
+            <class name="testing.ComparePrices2"></class>
+        </classes>
+    </test>
+<!--    <test name="Prices">
+        <classes>
+            <class name="testing.ComparePrices"></class>
+        </classes>
+    </test>-->
+    <test name="topMenu">
+        <classes>
+            <class name="testing.TopMenu"></class>
+        </classes>
+    </test>
+    <test name="ComparePricesWithDB">
+        <classes>
+            <class name="testing.ComparePricesWithDB"></class>
+        </classes>
+    </test>
+    <test name="Checkbox">
+        <classes>
+            <class name="testing.Checkbox"></class>
+        </classes>
+    </test>
+    <test name="ClearAll">
+        <classes>
+            <class name="testing.DeleteAll"></class>
+        </classes>
+    </test>
+
+</suite>

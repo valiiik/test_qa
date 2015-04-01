@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 74.459 sec <<< FAILURE!
+comparePrices(testing.ComparePricesWithDB)  Time elapsed: 7.493 sec  <<< FAILURE!
+java.lang.AssertionError: Product Corei3 is present in DB expected [Intel Core i3-3250 LGA1155, 3.5GHz, Box (BX80637I33250SR0YX)] but found [null]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at testing.ComparePricesWithDB.comparePrices(ComparePricesWithDB.java:45)
